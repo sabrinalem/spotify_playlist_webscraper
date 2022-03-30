@@ -134,15 +134,15 @@ class getA():
         return l
 
 pl = getAudioFt("spotify:playlist:37i9dQZF1DX4JAvHpjipBk")
-pl.getTable().to_csv('data/22-03-25/aftTable.csv')
+pl.getTable().to_csv('PATH/aftTable.csv')
 
 pl_ = getSummary("spotify:playlist:37i9dQZF1DX4JAvHpjipBk")
-pl_.getTable_().to_csv('data/22-03-25/summary.csv')
+pl_.getTable_().to_csv('/PATH/summary.csv')
 
 pl__ = getSpecs("spotify:playlist:37i9dQZF1DX4JAvHpjipBk")
 dic = pl__.getDict()
 
-with open('/Users/sabrinalem/Desktop/FriData_Functions/data/22-03-25/specs.json', 'w') as out:
+with open('/PATH/specs.json', 'w') as out:
     json.dump(dic, out)
 # pl = getA("spotify:playlist:37i9dQZF1DX4JAvHpjipBk").getTable()
 # # print(pl)
